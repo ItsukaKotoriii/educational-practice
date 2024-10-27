@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaSE2</title>
+</head>
+<body>
+    <div class="container d-flex flex-col">
+         <form id="birthdayForm" class="d-flex flex-col">
+             <label>День:</label>
+             <input type="number" name="day" id="day" min="1" max="31" required>
+             <br>
+             <label>Месяц:</label>
+             <input type="number" name="month" id="month" min="1" max="12" required>
+             <br>
+             <label>Год:</label>
+             <input type="number" name="year" id="year" min="1900" max="3000" required>
+             <br>
+             <input type="submit" value="Отправить">
+         </form>
+         <div id="output" class="d-flex flex-col"></div>
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
