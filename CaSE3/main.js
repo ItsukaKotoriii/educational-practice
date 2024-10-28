@@ -1,5 +1,18 @@
 import './style.css'
 
+document.querySelector('#app').innerHTML = `
+  <div class="slider-container">
+        <button id="prevBtn">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+        <img src="images/image1.webp" alt="Image 1" id="sliderImg">
+        <button id="nextBtn">
+          <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        </button>
+        <div id="slideNumber">1/3</div>
+    </div>
+`;
+
 const images = [
   "images/image1.webp",
   "images/image2.webp",
@@ -33,18 +46,5 @@ document.addEventListener('keydown', (event) => {
     updateSlider();
   }
 });
-
-document.querySelector('#app').innerHTML = `
-  <div class="slider-container">
-        <button id="prevBtn">
-          <i class="fa fa-arrow-left" aria-hidden="true"></i>
-        </button>
-        <img src="images/image1.webp" alt="Image 1" id="sliderImg">
-        <button id="nextBtn">
-          <i class="fa fa-arrow-right" aria-hidden="true"></i>
-        </button>
-        <div id="slideNumber">1/3</div>
-    </div>
-`;
 
 updateSlider();
